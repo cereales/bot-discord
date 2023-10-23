@@ -1,0 +1,10 @@
+[DEFAULT]
+prefix_command = .
+
+[PROD]
+token =
+target_channel =        # (Optional) channel id were bot will answer
+error_channel =         # (Optional) channel id were to send error logs
+
+[ADMINS]
+# user id that can run restricted commands
