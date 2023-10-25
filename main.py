@@ -13,10 +13,12 @@ import logging
 logger = logging.getLogger(__name__)
 
 from interface.orchestration import Orchestrator
+from utils.language import MessageNLS
 
 
 if __name__ == '__main__':
     CONTEXT = tools.read_input()
     bot = Orchestrator(tools.Constant.CONFIG_PATH, CONTEXT)
+    MessageNLS.set_language("fr")
     # start Bot
     bot.run()       # Stop with ctrl+C
